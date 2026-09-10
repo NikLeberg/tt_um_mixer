@@ -1,0 +1,31 @@
+{
+    "name": "${localWorkspaceFolderBasename}",
+    "image": "hpretl/iic-osic-tools@sha256:3c371645b19c6f6564dc8c7b21e39ad1c1833d274fe5b85639afe1ba9d7987e7",
+    "runArgs": [
+        // set a human friendly container name
+        "--name=${localWorkspaceFolderBasename}_devcontainer",
+        // set a human friendly machine name
+        "--hostname=${localWorkspaceFolderBasename}",
+        // forward and authenticate X11
+        "--volume=/tmp/.X11-unix/:/tmp/.X11-unix/",
+        "--env=DISPLAY=:0",
+        "--volume=${localEnv:XAUTHORITY}:/root/.Xauthority",
+        "--env=XAUTHORITY=/root/.Xauthority",
+        // set PDK to ihp-sg13g2
+        "--env=PDK=ihp-sg13g2",
+        "--env=PDKPATH=$PDK_ROOT/$PDK",
+        "--env=STD_CELL_LIBRARY=sg13g2_stdcell",
+        "--env=SPICE_USERINIT_DIR=$PDKPATH/libs.tech/ngspice",
+        "--env=KLAYOUT_PATH=$PDKPATH/libs.tech/klayout"
+    ],
+    "customizations": {
+        "vscode": {
+            // IDs of extensions installed when the container is created.
+            "extensions": [
+                // language server for linting
+                "hbohlin.vhdl-ls"
+            ]
+        }
+    },
+    "containerUser": "root"
+}
