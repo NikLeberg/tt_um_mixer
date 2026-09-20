@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: Apache-2.0
+
+# Run full R and C parasitic extraction on current design
+# -------------------------------------------------------
 extract all
 extresist all
 ext2spice hierarchy on

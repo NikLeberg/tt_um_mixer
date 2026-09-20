@@ -358,6 +358,18 @@ MACRO tt_um_nikleberg_mixer
       LAYER TopMetal1 ;
         RECT 1.000 5.000 3.400 154.000 ;
     END
+    PORT
+      LAYER TopMetal1 ;
+        RECT 61.000 5.000 63.400 154.000 ;
+    END
+    PORT
+      LAYER TopMetal1 ;
+        RECT 121.000 5.000 123.400 154.000 ;
+    END
+    PORT
+      LAYER TopMetal1 ;
+        RECT 181.000 5.000 183.400 154.000 ;
+    END
   END VDPWR
   PIN VGND
     DIRECTION INOUT ;
@@ -365,6 +377,18 @@ MACRO tt_um_nikleberg_mixer
     PORT
       LAYER TopMetal1 ;
         RECT 6.000 5.000 8.400 154.000 ;
+    END
+    PORT
+      LAYER TopMetal1 ;
+        RECT 66.000 5.000 68.400 154.000 ;
+    END
+    PORT
+      LAYER TopMetal1 ;
+        RECT 126.000 5.000 128.400 154.000 ;
+    END
+    PORT
+      LAYER TopMetal1 ;
+        RECT 186.000 5.000 188.400 154.000 ;
     END
   END VGND
 END tt_um_nikleberg_mixer

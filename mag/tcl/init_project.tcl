@@ -17,6 +17,12 @@ set POWER_STRIPE_WIDTH 2.4um                 ;# The minimum width is 2.1um
 set POWER_STRIPES {
     VDPWR 1um
     VGND  6um
+    VDPWR 61um
+    VGND  66um
+    VDPWR 121um
+    VGND  126um
+    VDPWR 181um
+    VGND  186um
 }
 
 # Read in the pin positions
