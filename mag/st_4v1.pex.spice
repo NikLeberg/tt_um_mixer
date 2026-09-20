@@ -1,6 +1,6 @@
 * NGSPICE file created from st_4v1.ext - technology: ihp-sg13g2
 
-.subckt st_4v1 VDD A Y VSS
+.subckt st_4v1_pex VDD A Y VSS
 X0 a_142_n38# Y VSS.t0 VDD sg13_lv_pmos ad=0.204p pd=1.88u as=0.204p ps=1.88u w=0.6u l=0.13u
 X1 Y A a_142_n38# VDD sg13_lv_pmos ad=0.816p pd=5.48u as=0.456p ps=2.78u w=2.4u l=0.13u
 X2 VDD Y a_142_n594# VSS.t1 sg13_lv_nmos ad=0.204p pd=1.88u as=0.204p ps=1.88u w=0.6u l=0.13u
