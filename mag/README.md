@@ -10,3 +10,35 @@ https://tinytapeout.com/specs/analog/#draw-the-rest-of-the-owl
     - This fixes a too _high_ power stripe. Script was originally built for bigger analog designs.
 4. Open magic and source the tcl script.
     - This generates the pin boxes as well as the power stipes.
+
+## IP
+
+### Schmitt Trigger (st)
+1. Export netlist of parameterized st from `../xschem/strig.sch` with xschem.
+2. ~~Adapt WNx and WPx parameters of generated netlist to get desired thresholds.~~
+3. ~~Open Magic VSLI and do _File_ > _Import SPICE_.~~
+4. Instantiate the required _devices_ directly:
+    - _Devices_ > _{n/p}mos (MOSFET)_.
+    - Change the default parameters as required.
+    - E.g. for the stacked MOSFETS we set _Fingers_ = 2, disable _Add bottom gate contact_, enable _Connect gates together_, enable _Add guard ring_ but disable _Add bottom guard ring contact_.
+5. Make the required further edits to the cell instances.
+6. Flatten the currently loaded cell with `flatten <new cell name>` and then check it with `load <new cell name>`. This enables us to keep the changes to the PDK cells locally without changing the global cells.
+7. Draw the rest of the owl!
+
+## PEX
+1. Open design with Magic VSLI.
+2. Run these commands in the console:`.
+3. Setup ext2spice:
+    ```
+    extract all
+    extresist all
+    ext2spice hierarchy on
+    ext2spice extresist on
+    ext2spice scale off
+    ext2spice lvs on
+    ext2spice cthresh 0
+    ext2spice rthresh 0
+    ```
+4. Then finally generate the netlist with `ext2spice`.
+5. The generated netlist will have its port order shuffled. A manual post-processing is required to make them identical to the xschem schema.
+6. Note: The extracted MOSFET W/L values seem to be off by a factor of 2. Also the caps will likely be wrong as well?
