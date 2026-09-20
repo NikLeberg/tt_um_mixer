@@ -31,6 +31,9 @@ https://tinytapeout.com/specs/analog/#draw-the-rest-of-the-owl
 | st_2v1  | 1.2            | 0.6      | ~0.72   | ~0.47   |
 | st_4v1  | 2.4            | 0.6      | ~0.66   | ~0.52   |
 
+### Resistor Ladder 8-bit DAC (r2r)
+Heavily inspired by: https://github.com/htfab/ttihp0p3-r2r-dac
+
 ## PEX
 1. Open design with Magic VSLI.
 2. Run these commands in the console:`.
