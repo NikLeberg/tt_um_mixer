@@ -25,6 +25,12 @@ https://tinytapeout.com/specs/analog/#draw-the-rest-of-the-owl
 6. Flatten the currently loaded cell with `flatten <new cell name>` and then check it with `load <new cell name>`. This enables us to keep the changes to the PDK cells locally without changing the global cells.
 7. Draw the rest of the owl!
 
+| Variant | Wx1 & Wx2 [um] | Wx3 [um] | Vhl [V] | Vlh [V] |
+|---------|----------------|----------|---------|---------|
+| st_1v1  | 0.6            | 0.6      | ~0.77   | ~0.43   |
+| st_2v1  | 1.2            | 0.6      | ~0.72   | ~0.47   |
+| st_4v1  | 2.4            | 0.6      | ~0.66   | ~0.52   |
+
 ## PEX
 1. Open design with Magic VSLI.
 2. Run these commands in the console:`.
