@@ -391,6 +391,10 @@ MACRO tt_um_nikleberg_mixer
         RECT 186.000 5.000 188.400 154.000 ;
     END
   END VGND
+  OBS
+      LAYER Metal5 ;
+        RECT 1.000 151.000 191.190 152.640 ;
+  END
 END tt_um_nikleberg_mixer
 END LIBRARY
 
