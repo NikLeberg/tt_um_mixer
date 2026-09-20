@@ -61,7 +61,7 @@ quit 0
 C {lab_pin.sym} 240 -180 0 0 {name=p2 sig_type=std_logic lab=Vin}
 C {capa-2.sym} 440 -130 0 0 {name=C1
 m=1
-value=1p
+value=100f
 footprint=1206
 device=polarized_capacitor}
 C {gnd.sym} 440 -100 0 0 {name=l4 lab=0}
