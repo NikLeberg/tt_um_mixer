@@ -1,34 +1,32 @@
 * NGSPICE file created from st_1v1.ext - technology: ihp-sg13g2
 
 .subckt st_1v1 VDD A Y VSS
-X0 a_142_n38# Y VSS.t2 VDD sg13_lv_pmos ad=51f pd=0.94u as=51f ps=0.94u w=0.6u l=0.13u
-X1 Y A a_142_n38# VDD sg13_lv_pmos ad=51f pd=0.94u as=28.5f ps=0.49u w=0.6u l=0.13u
-X2 a_142_n594# A VSS VSS.t0 sg13_lv_nmos ad=28.5f pd=0.49u as=51f ps=0.94u w=0.6u l=0.13u
-X3 VDD Y a_142_n594# VSS.t3 sg13_lv_nmos ad=51f pd=0.94u as=51f ps=0.94u w=0.6u l=0.13u
-X4 Y A a_142_n594# VSS.t1 sg13_lv_nmos ad=51f pd=0.94u as=28.5f ps=0.49u w=0.6u l=0.13u
-X5 a_142_n38# A VDD VDD sg13_lv_pmos ad=28.5f pd=0.49u as=51f ps=0.94u w=0.6u l=0.13u
-R0 VSS.n2 VSS.t0 666.129
+X0 a_142_n38# Y VSS.t2 VDD sg13_lv_pmos ad=0.204p pd=1.88u as=0.204p ps=1.88u w=0.6u l=0.13u
+X1 Y A a_142_n38# VDD sg13_lv_pmos ad=0.204p pd=1.88u as=0.114p ps=0.98u w=0.6u l=0.13u
+X2 a_142_n594# A VSS VSS.t0 sg13_lv_nmos ad=0.114p pd=0.98u as=0.204p ps=1.88u w=0.6u l=0.13u
+X3 VDD Y a_142_n594# VSS.t3 sg13_lv_nmos ad=0.204p pd=1.88u as=0.204p ps=1.88u w=0.6u l=0.13u
+X4 Y A a_142_n594# VSS.t1 sg13_lv_nmos ad=0.204p pd=1.88u as=0.114p ps=0.98u w=0.6u l=0.13u
+X5 a_142_n38# A VDD VDD sg13_lv_pmos ad=0.114p pd=0.98u as=0.204p ps=1.88u w=0.6u l=0.13u
+R0 VSS.n1 VSS.t0 666.129
 R1 VSS.t0 VSS.t3 212.429
 R2 VSS.t3 VSS.t1 9.2
-R3 VSS.t2 VSS.n1 1.63957
-R4 VSS.n2 VSS.t1 1.59319
-R5 VSS VSS.n1 1.46263
-R6 VSS.n0 VSS.n2 1.39685
-R7 VSS.n2 VSS.n1 1.39685
-R8 VSS.n0 VSS.t2 1.07146
-R9 VSS VSS.n0 1.03386
-C0 VDD a_142_n38# 0.06239f
-C1 A a_142_n38# 0.06569f
-C2 Y a_142_n38# 0.08992f
+R3 VSS VSS.t2 1.98121
+R4 VSS.n1 VSS.n0 0.39753
+R5 VSS VSS.n0 1.05939
+R6 VSS.t2 VSS.n0 1.26213
+R7 VSS.n1 VSS.t1 1.59319
+C0 a_142_n594# A 0.06569f
+C1 Y a_142_n594# 0.08992f
+C2 Y A 0.07738f
 C3 VDD a_142_n594# 0.04429f
-C4 A a_142_n594# 0.06569f
-C5 VDD A 0.57625f
-C6 Y a_142_n594# 0.08992f
-C7 VDD Y 0.28799f
-C8 A Y 0.07738f
-C9 a_142_n594# VSS 0.27495f
-C10 a_142_n38# VSS 0.75682f
-C11 VDD VSS 0.77204f
-C12 VSS.t2 VSS 0.28565f
+C4 VDD A 0.58215f
+C5 VDD Y 0.29535f
+C6 A a_142_n38# 0.06569f
+C7 Y a_142_n38# 0.08992f
+C8 VDD a_142_n38# 0.06239f
+C9 a_142_n594# VSS 0.27643f
+C10 a_142_n38# VSS 0.76349f
+C11 VDD VSS 0.7905f
+C12 VSS.t2 VSS 0.28935f
 .ends
 

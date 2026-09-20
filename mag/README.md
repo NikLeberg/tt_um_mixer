@@ -41,4 +41,5 @@ https://tinytapeout.com/specs/analog/#draw-the-rest-of-the-owl
     ```
 4. Then finally generate the netlist with `ext2spice`.
 5. The generated netlist will have its port order shuffled. A manual post-processing is required to make them identical to the xschem schema.
-6. Note: The extracted MOSFET W/L values seem to be off by a factor of 2. Also the caps will likely be wrong as well?
+6. ~~Note: The extracted MOSFET W/L values seem to be off by a factor of 2. Also the caps will likely be wrong as well?~~
+    - I guess the issue was that the PDK wasn't sourced correctly? A container rebuild + running `iic-pdk ihp-sg13g2` first fixed it.
