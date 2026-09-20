@@ -43,12 +43,12 @@ pinout:
   # Bidirectional pins
   uio[0]: ""
   uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[2]: "ST1v1_IN"
+  uio[3]: "ST1v1_OUT"
+  uio[4]: "ST2v1_IN"
+  uio[5]: "ST2v1_OUT"
+  uio[6]: "ST4v1_IN"
+  uio[7]: "ST4v1_OUT"
 
 # Do not change!
 yaml_version: 6

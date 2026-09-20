@@ -114,6 +114,7 @@ MACRO tt_um_nikleberg_mixer
   PIN uio_in[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.312000 ;
     PORT
       LAYER Metal4 ;
         RECT 140.970 153.980 141.270 154.980 ;
@@ -130,6 +131,7 @@ MACRO tt_um_nikleberg_mixer
   PIN uio_in[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.624000 ;
     PORT
       LAYER Metal4 ;
         RECT 133.290 153.980 133.590 154.980 ;
@@ -146,6 +148,7 @@ MACRO tt_um_nikleberg_mixer
   PIN uio_in[6]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 1.248000 ;
     PORT
       LAYER Metal4 ;
         RECT 125.610 153.980 125.910 154.980 ;
@@ -178,6 +181,7 @@ MACRO tt_um_nikleberg_mixer
   PIN uio_oe[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 11.849999 ;
     PORT
       LAYER Metal4 ;
         RECT 48.810 153.980 49.110 154.980 ;
@@ -186,6 +190,7 @@ MACRO tt_um_nikleberg_mixer
   PIN uio_oe[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 11.849999 ;
     PORT
       LAYER Metal4 ;
         RECT 44.970 153.980 45.270 154.980 ;
@@ -194,6 +199,7 @@ MACRO tt_um_nikleberg_mixer
   PIN uio_oe[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 11.849999 ;
     PORT
       LAYER Metal4 ;
         RECT 41.130 153.980 41.430 154.980 ;
@@ -202,6 +208,7 @@ MACRO tt_um_nikleberg_mixer
   PIN uio_oe[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 11.849999 ;
     PORT
       LAYER Metal4 ;
         RECT 37.290 153.980 37.590 154.980 ;
@@ -210,6 +217,7 @@ MACRO tt_um_nikleberg_mixer
   PIN uio_oe[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 11.849999 ;
     PORT
       LAYER Metal4 ;
         RECT 33.450 153.980 33.750 154.980 ;
@@ -218,6 +226,7 @@ MACRO tt_um_nikleberg_mixer
   PIN uio_oe[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 11.849999 ;
     PORT
       LAYER Metal4 ;
         RECT 29.610 153.980 29.910 154.980 ;
@@ -366,15 +375,15 @@ MACRO tt_um_nikleberg_mixer
     END
     PORT
       LAYER TopMetal1 ;
-        RECT 61.000 5.000 63.400 154.000 ;
-    END
-    PORT
-      LAYER TopMetal1 ;
         RECT 121.000 5.000 123.400 154.000 ;
     END
     PORT
       LAYER TopMetal1 ;
         RECT 181.000 5.000 183.400 154.000 ;
+    END
+    PORT
+      LAYER TopMetal1 ;
+        RECT 61.000 5.000 63.400 154.000 ;
     END
   END VDPWR
   PIN VGND
@@ -403,9 +412,9 @@ MACRO tt_um_nikleberg_mixer
       LAYER Metal1 ;
         RECT 60.685 139.110 79.005 148.870 ;
       LAYER Metal2 ;
-        RECT 60.330 139.415 79.005 148.565 ;
+        RECT 60.330 139.415 79.355 148.565 ;
       LAYER Metal3 ;
-        RECT 60.275 143.785 76.045 144.195 ;
+        RECT 60.275 141.880 141.270 150.375 ;
       LAYER Metal4 ;
         RECT 30.120 153.770 33.240 153.980 ;
         RECT 33.960 153.770 37.080 153.980 ;
@@ -419,9 +428,26 @@ MACRO tt_um_nikleberg_mixer
         RECT 64.680 153.770 67.800 153.980 ;
         RECT 68.520 153.770 71.640 153.980 ;
         RECT 72.360 153.770 75.480 153.980 ;
-        RECT 29.610 143.845 75.990 153.770 ;
+        RECT 76.200 153.770 79.320 153.980 ;
+        RECT 80.040 153.770 83.160 153.980 ;
+        RECT 83.880 153.770 87.000 153.980 ;
+        RECT 87.720 153.770 90.840 153.980 ;
+        RECT 91.560 153.770 94.680 153.980 ;
+        RECT 95.400 153.770 98.520 153.980 ;
+        RECT 99.240 153.770 102.360 153.980 ;
+        RECT 103.080 153.770 106.200 153.980 ;
+        RECT 106.920 153.770 110.040 153.980 ;
+        RECT 110.760 153.770 113.880 153.980 ;
+        RECT 114.600 153.770 117.720 153.980 ;
+        RECT 118.440 153.770 121.560 153.980 ;
+        RECT 122.280 153.770 125.400 153.980 ;
+        RECT 126.120 153.770 129.240 153.980 ;
+        RECT 129.960 153.770 133.080 153.980 ;
+        RECT 133.800 153.770 136.920 153.980 ;
+        RECT 137.640 153.770 140.760 153.980 ;
+        RECT 29.610 141.880 141.270 153.770 ;
       LAYER Metal5 ;
-        RECT 1.000 151.000 191.190 152.640 ;
+        RECT 1.000 141.880 191.190 152.640 ;
   END
 END tt_um_nikleberg_mixer
 END LIBRARY
