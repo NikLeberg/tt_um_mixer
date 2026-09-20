@@ -5,8 +5,8 @@ VERSION 5.7 ;
 MACRO tt_um_nikleberg_mixer
   CLASS BLOCK ;
   FOREIGN tt_um_nikleberg_mixer ;
-  ORIGIN 0.000 0.000 ;
-  SIZE 202.080 BY 154.980 ;
+  ORIGIN -1.000 -5.000 ;
+  SIZE 190.190 BY 150.140 ;
   PIN clk
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -220,7 +220,7 @@ MACRO tt_um_nikleberg_mixer
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 29.610 153.980 29.910 154.980 ;
+        RECT 29.605 154.140 29.905 155.140 ;
     END
   END uio_oe[7]
   PIN uio_out[0]
@@ -376,10 +376,6 @@ MACRO tt_um_nikleberg_mixer
     USE GROUND ;
     PORT
       LAYER TopMetal1 ;
-        RECT 6.000 5.000 8.400 154.000 ;
-    END
-    PORT
-      LAYER TopMetal1 ;
         RECT 66.000 5.000 68.400 154.000 ;
     END
     PORT
@@ -390,7 +386,25 @@ MACRO tt_um_nikleberg_mixer
       LAYER TopMetal1 ;
         RECT 186.000 5.000 188.400 154.000 ;
     END
+    PORT
+      LAYER TopMetal1 ;
+        RECT 6.000 5.000 8.400 154.000 ;
+    END
   END VGND
+  OBS
+      LAYER Metal4 ;
+        RECT 30.115 153.930 33.240 154.140 ;
+        RECT 29.605 153.770 33.240 153.930 ;
+        RECT 33.960 153.770 37.080 154.140 ;
+        RECT 37.800 153.770 40.920 154.140 ;
+        RECT 41.640 153.770 44.760 154.140 ;
+        RECT 45.480 153.770 48.600 154.140 ;
+        RECT 49.320 153.770 52.440 154.140 ;
+        RECT 53.160 153.770 56.280 154.140 ;
+        RECT 29.605 147.100 56.790 153.770 ;
+      LAYER Metal5 ;
+        RECT 1.000 147.100 56.790 148.740 ;
+  END
 END tt_um_nikleberg_mixer
 END LIBRARY
 

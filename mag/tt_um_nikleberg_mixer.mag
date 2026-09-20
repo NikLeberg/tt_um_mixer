@@ -1,9 +1,7 @@
 magic
 tech ihp-sg13g2
 magscale 1 2
-timestamp 1789909591
-<< pblock >>
-rect 200 29800 37680 30800
+timestamp 1789912048
 << metal4 >>
 rect 5921 29738 5981 31028
 rect 5921 29630 5923 29738
@@ -203,6 +201,4 @@ flabel metal4 s 5921 30828 5981 31028 0 FreeSans 320 90 0 0 uio_oe[7]
 port 26 nsew signal output
 flabel metal6 1200 1000 1680 30800 1 FreeSans 400 0 0 0 VGND
 port 44 nsew ground bidirectional
-<< properties >>
-string FIXED_BBOX 0 0 40416 30996
 << end >>
