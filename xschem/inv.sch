@@ -26,7 +26,7 @@ N 140 -280 140 -270 {lab=VP}
 N 140 -300 140 -280 {lab=VP}
 C {sg13g2_pr/sg13_lv_nmos.sym} 120 -120 0 0 {name=M1
 l=0.13u
-w=1u
+w=\{WN\}
 ng=1
 m=1
 mm_ok=1
@@ -35,7 +35,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 120 -240 0 0 {name=M2
 l=0.13u
-w=1u
+w=\{WP\}
 ng=1
 m=1
 mm_ok=1
