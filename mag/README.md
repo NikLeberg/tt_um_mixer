@@ -34,6 +34,8 @@ https://tinytapeout.com/specs/analog/#draw-the-rest-of-the-owl
 ### Resistor Ladder 8-bit DAC (r2r)
 Heavily inspired by: https://github.com/htfab/ttihp0p3-r2r-dac
 
+Interesting idea: make it use a common centroid for process matching and improved accuracy https://www.ee.columbia.edu/~kinget/EE6350_S23/Group07Website/ic_layout.html
+
 ## PEX
 1. Open design with Magic VSLI.
 2. Run these commands in the console:`.
