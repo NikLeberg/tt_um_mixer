@@ -250,6 +250,8 @@ MACRO tt_um_nikleberg_mixer
   PIN uio_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.156000 ;
+    ANTENNADIFFAREA 0.408000 ;
     PORT
       LAYER Metal4 ;
         RECT 75.690 153.980 75.990 154.980 ;
@@ -266,6 +268,8 @@ MACRO tt_um_nikleberg_mixer
   PIN uio_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.156000 ;
+    ANTENNADIFFAREA 0.816000 ;
     PORT
       LAYER Metal4 ;
         RECT 68.010 153.980 68.310 154.980 ;
@@ -282,6 +286,8 @@ MACRO tt_um_nikleberg_mixer
   PIN uio_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.156000 ;
+    ANTENNADIFFAREA 1.632000 ;
     PORT
       LAYER Metal4 ;
         RECT 60.330 153.980 60.630 154.980 ;
@@ -380,18 +386,26 @@ MACRO tt_um_nikleberg_mixer
     END
     PORT
       LAYER TopMetal1 ;
-        RECT 66.000 5.000 68.400 154.000 ;
-    END
-    PORT
-      LAYER TopMetal1 ;
         RECT 126.000 5.000 128.400 154.000 ;
     END
     PORT
       LAYER TopMetal1 ;
         RECT 186.000 5.000 188.400 154.000 ;
     END
+    PORT
+      LAYER TopMetal1 ;
+        RECT 66.000 5.000 68.400 154.000 ;
+    END
   END VGND
   OBS
+      LAYER GatPoly ;
+        RECT 60.995 139.040 78.695 148.940 ;
+      LAYER Metal1 ;
+        RECT 60.685 139.110 79.005 148.870 ;
+      LAYER Metal2 ;
+        RECT 60.330 139.415 79.005 148.565 ;
+      LAYER Metal3 ;
+        RECT 60.275 143.785 76.045 144.195 ;
       LAYER Metal4 ;
         RECT 30.120 153.770 33.240 153.980 ;
         RECT 33.960 153.770 37.080 153.980 ;
@@ -399,7 +413,13 @@ MACRO tt_um_nikleberg_mixer
         RECT 41.640 153.770 44.760 153.980 ;
         RECT 45.480 153.770 48.600 153.980 ;
         RECT 49.320 153.770 52.440 153.980 ;
-        RECT 29.610 151.000 52.950 153.770 ;
+        RECT 53.160 153.770 56.280 153.980 ;
+        RECT 57.000 153.770 60.120 153.980 ;
+        RECT 60.840 153.770 63.960 153.980 ;
+        RECT 64.680 153.770 67.800 153.980 ;
+        RECT 68.520 153.770 71.640 153.980 ;
+        RECT 72.360 153.770 75.480 153.980 ;
+        RECT 29.610 143.845 75.990 153.770 ;
       LAYER Metal5 ;
         RECT 1.000 151.000 191.190 152.640 ;
   END
