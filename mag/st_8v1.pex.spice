@@ -1,0 +1,29 @@
+* NGSPICE file created from st_8v1.ext - technology: ihp-sg13g2
+
+.subckt st_8v1_pex VDD A Y VSS
+X0 a_142_n38# Y VSS VDD sg13_lv_pmos ad=0.204p pd=1.88u as=0.204p ps=1.88u w=0.6u l=0.13u
+X1 Y A a_142_n38# VDD sg13_lv_pmos ad=1.632p pd=10.28u as=0.912p ps=5.18u w=4.8u l=0.13u
+X2 VDD Y a_142_n594# VSS.t0 sg13_lv_nmos ad=0.204p pd=1.88u as=0.204p ps=1.88u w=0.6u l=0.13u
+X3 a_142_n594# A VSS.t2 VSS.t1 sg13_lv_nmos ad=0.912p pd=5.18u as=1.632p ps=10.28u w=4.8u l=0.13u
+X4 a_142_n38# A VDD VDD sg13_lv_pmos ad=0.912p pd=5.18u as=1.632p ps=10.28u w=4.8u l=0.13u
+X5 Y A a_142_n594# VSS.t3 sg13_lv_nmos ad=1.632p pd=10.28u as=0.912p ps=5.18u w=4.8u l=0.13u
+R0 VSS.n0 VSS.t1 300.553
+R1 VSS.t1 VSS.t0 95.9535
+R2 VSS.t0 VSS.t3 4.44483
+R3 VSS.n0 VSS.t3 1.58814
+R4 VSS VSS.n0 1.34415
+R5 VSS.n0 VSS.t2 1.21479
+C0 VDD A 0.89256f
+C1 a_142_n38# A 0.1467f
+C2 Y A 0.1567f
+C3 a_142_n594# VDD 0.05209f
+C4 a_142_n594# Y 0.40731f
+C5 a_142_n38# VDD 0.37982f
+C6 Y VDD 0.57409f
+C7 Y a_142_n38# 0.40731f
+C8 a_142_n594# A 0.1467f
+C9 a_142_n594# VSS 0.77976f
+C10 a_142_n38# VSS 1.26589f
+C11 VDD VSS 1.20559f
+.ends
+
