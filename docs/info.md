@@ -22,11 +22,11 @@ All Schmitt trigger variants are built from the same basic circuit. At its core,
 
 ![CMOS Schmitt trigger circuit](circuit.png)
 
+![Magic layout of the 2v1 variant](layout.png){width=60%}
+
 The circuit was designed and simulated in Xschem and laid out in Magic VLSI. The thresholds of the Schmitt trigger depend on the gate widths and lengths of M1, M2, M4, and M5. The layout is drawn so that the other variants can be derived from this basic layout simply by stretching the fingers of the two-finger MOSFETs, i.e. increasing their gate width.
 
 (Also: I know, I know, the PMOS side should be ~2x bigger, but here we are.)
-
-![Magic layout of the 2v1 variant](layout.png)
 
 In the end, I included four variants:
 - _1v1_: all gate widths are equal
