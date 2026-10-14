@@ -18,7 +18,21 @@ The project name _Mixer_ simply stands for _mixed-signal_ and has nothing to do 
 
 ## The inner workings
 
-TBD
+All Schmitt trigger variants are built from the same basic circuit. At its core, it is just an inverter with the classic NMOS and PMOS transistors. However, the pull-up and pull-down transistors are each split in half, and the voltage of the resulting middle node is controlled by a third transistor. Depending on the current output state, these _middle nodes_ are pulled towards VDD or GND, which shifts the input voltage at which the _inverter_ trips.
+
+![CMOS Schmitt trigger circuit](circuit.png)
+
+The circuit was designed and simulated in Xschem and laid out in Magic VLSI. The thresholds of the Schmitt trigger depend on the gate widths and lengths of M1, M2, M4, and M5. The layout is drawn so that the other variants can be derived from this basic layout simply by stretching the fingers of the two-finger MOSFETs, i.e. increasing their gate width.
+
+(Also: I know, I know, the PMOS side should be ~2x bigger, but here we are.)
+
+![Magic layout of the 2v1 variant](layout.png)
+
+In the end, I included four variants:
+- _1v1_: all gate widths are equal
+- _2v1_: gate width of M1, M2, M4, and M5 is 2x that of M3 and M6
+- _4v1_: gate width of M1, M2, M4, and M5 is 4x that of M3 and M6
+- _8v1_: gate width of M1, M2, M4, and M5 is 8x that of M3 and M6
 
 ## How to test
 
